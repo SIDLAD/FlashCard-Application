@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flashcard.CategoryScreenController">
+   <children>
+      <Label fx:id="categoryNameLabel" layoutX="49.0" layoutY="41.0" text="Category Name">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="70.0" text="Your Private Decks:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="myDeckList" layoutX="25.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="publicDeckList" layoutX="337.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="viewMyDeckButton" layoutX="25.0" layoutY="358.0" mnemonicParsing="false" onAction="#viewDeck" text="View Deck" />
+      <Button fx:id="reviseMyDeckButton" layoutX="117.0" layoutY="358.0" mnemonicParsing="false" onAction="#reviseDeck" text="Revise" />
+      <Button fx:id="revisePublicDeckButton" layoutX="437.0" layoutY="358.0" mnemonicParsing="false" onAction="#revisePublicDeck" text="Revise Public Deck" />
+      <Label layoutX="27.0" layoutY="123.0" text="Select from your private decks" />
+      <Label layoutX="337.0" layoutY="123.0" text="Select from public decks" />
+      <Label layoutX="244.0" layoutY="44.0" text="Create Deck :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newDeckName" layoutX="347.0" layoutY="44.0" prefHeight="26.0" prefWidth="189.0" promptText="Enter new Deck Name" />
+      <Button fx:id="createPublicDeckButton" layoutX="344.0" layoutY="83.0" mnemonicParsing="false" onAction="#createPublicDeck" text="Create Public" />
+      <Button fx:id="createPrivateDeckButton" layoutX="442.0" layoutY="83.0" mnemonicParsing="false" onAction="#createPrivateDeck" text="Create Private" />
+      <Label fx:id="deckNumber" layoutX="194.0" layoutY="70.0" text="42">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="goBackButton" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewPublicDeckButton" layoutX="323.0" layoutY="358.0" mnemonicParsing="false" onAction="#viewPublicDeck" text="View Public Deck" />
+   </children>
+</AnchorPane>

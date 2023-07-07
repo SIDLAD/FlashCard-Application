@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flashcard.DeckSceneController">
+   <children>
+      <Label fx:id="deckNameLabel" layoutX="59.0" layoutY="39.0" text="Deck Name">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="cardList" layoutX="57.0" layoutY="115.0" prefHeight="252.0" prefWidth="275.0" />
+      <Button fx:id="editCardButton" layoutX="379.0" layoutY="127.0" mnemonicParsing="false" onAction="#editCard" text="Edit Card" />
+      <Label layoutX="59.0" layoutY="86.0" text="Select your Card" />
+      <Button fx:id="goBackButton" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#goBack" text="Go Back">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteCardButton" layoutX="379.0" layoutY="172.0" mnemonicParsing="false" onAction="#deleteCard" text="Delete Card" />
+      <Button fx:id="createDefButton" layoutX="390.0" layoutY="265.0" mnemonicParsing="false" onAction="#createDefCard" text="DEFINITION" />
+      <Button fx:id="createFIBButton" layoutX="491.0" layoutY="265.0" mnemonicParsing="false" onAction="#createFIBCard" text="FIB" />
+      <Button fx:id="createMCQButton" layoutX="491.0" layoutY="311.0" mnemonicParsing="false" onAction="#createMCQCard" text="MCQ" />
+      <Button fx:id="CreateTfButton" layoutX="390.0" layoutY="311.0" mnemonicParsing="false" onAction="#createTfCard" text="TRUE/FALSE" />
+      <Label layoutX="377.0" layoutY="234.0" text="Create card - type:" />
+   </children>
+</AnchorPane>
