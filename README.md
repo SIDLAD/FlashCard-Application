@@ -4,7 +4,7 @@
 
 1. Install a version of java which recognizes class file versions upto 63 in your Program Files folder.
 
-2. execute: java -jar "name-of-jar-file" or open the jar file by double clicking in windows
+2. Execute: java -jar "name-of-jar-file" or open the jar file by double clicking in windows
 
 G-Drive Links to the videos folder:
 
