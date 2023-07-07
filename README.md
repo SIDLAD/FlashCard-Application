@@ -1,6 +1,6 @@
-## Flash Card Application
+# Flash Card Application
 
-# How to Run
+## How to Run
 
 1. Install a version of java which recognizes class file versions upto 63 in your Program Files folder.
 
